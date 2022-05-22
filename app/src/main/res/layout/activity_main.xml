@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BCFAF4"
+    android:backgroundTint="#BCFAF4"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/txt_in_login"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="106dp"
+        android:backgroundTintMode="add"
+        android:fontFamily="@font/alata"
+        android:gravity="center"
+        android:paddingStart="8dp"
+        android:text="Iniciar sesión"
+        android:textColor="#256d7b"
+        android:textColorHint="#E59E6D"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_in_correo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_in_correo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alata"
+        android:text="Correo electrónico:"
+        android:textColor="#5B7F95"
+        app:layout_constraintBottom_toTopOf="@+id/edt_in_correo"
+        app:layout_constraintStart_toStartOf="@+id/edt_in_correo"
+        app:layout_constraintTop_toBottomOf="@+id/txt_in_login" />
+
+    <EditText
+        android:id="@+id/edt_in_correo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/diseno_button"
+        android:drawableLeft="@drawable/ic_action_name"
+        android:ems="10"
+        android:hint="     nombre@gmail.com"
+        android:inputType="textEmailAddress"
+        android:paddingStart="16dp"
+        android:textColor="@android:color/secondary_text_light"
+        app:layout_constraintBottom_toTopOf="@+id/txt_in_contraseña"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_in_correo" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edt_in_contrasena"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/diseno_button"
+        android:textColorHint="@android:color/secondary_text_light"
+        app:endIconMode="password_toggle"
+        app:layout_constraintBottom_toTopOf="@+id/btn_in_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_in_contraseña"
+        app:startIconDrawable="@drawable/ic_password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_in_contra"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/diseno_button"
+            android:hint=""
+            android:paddingStart="16dp"
+            android:textColor="@android:color/secondary_text_light" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_in_login"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="257dp"
+        android:background="@drawable/bordes"
+        android:backgroundTint="@color/color1"
+        android:fontFamily="@font/alata"
+        android:text="Iniciar sesión"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_in_contrasena" />
+
+    <TextView
+        android:id="@+id/txt_in_contraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alata"
+        android:text="Contraseña:"
+        android:textColor="#5B7F95"
+        app:layout_constraintBottom_toTopOf="@+id/edt_in_contrasena"
+        app:layout_constraintStart_toStartOf="@+id/edt_in_contrasena"
+        app:layout_constraintTop_toBottomOf="@+id/edt_in_correo" />
+
+    <TextView
+        android:id="@+id/txt_in_cuenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alata"
+        android:text="¿Aún no posee una cuenta?  "
+        android:textColor="#5B7F95"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txt_in_registro"
+        app:layout_constraintEnd_toStartOf="@+id/txt_in_registro"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_in_registro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="71dp"
+        android:clickable="true"
+        android:fontFamily="@font/alata"
+        android:text="Regístrese"
+        android:textColor="@color/color1"
+        android:textColorHint="@color/color1"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txt_in_cuenta"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
