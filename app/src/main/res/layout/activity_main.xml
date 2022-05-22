@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#BCFAF4"
-    android:backgroundTint="#BCFAF4"
+    android:background="@drawable/fondo"
     tools:context=".MainActivity">
 
 
@@ -22,7 +21,7 @@
         android:gravity="center"
         android:paddingStart="8dp"
         android:text="Iniciar sesión"
-        android:textColor="#256d7b"
+        android:textColor="#000000"
         android:textColorHint="#E59E6D"
         android:textSize="34sp"
         app:layout_constraintBottom_toTopOf="@+id/txt_in_correo"
@@ -36,7 +35,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/alata"
         android:text="Correo electrónico:"
-        android:textColor="#5B7F95"
+        android:textColor="#000000"
         app:layout_constraintBottom_toTopOf="@+id/edt_in_correo"
         app:layout_constraintStart_toStartOf="@+id/edt_in_correo"
         app:layout_constraintTop_toBottomOf="@+id/txt_in_login" />
@@ -110,7 +109,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/alata"
         android:text="Contraseña:"
-        android:textColor="#5B7F95"
+        android:textColor="#000000"
         app:layout_constraintBottom_toTopOf="@+id/edt_in_contrasena"
         app:layout_constraintStart_toStartOf="@+id/edt_in_contrasena"
         app:layout_constraintTop_toBottomOf="@+id/edt_in_correo" />
@@ -121,7 +120,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/alata"
         android:text="¿Aún no posee una cuenta?  "
-        android:textColor="#5B7F95"
+        android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/txt_in_registro"
         app:layout_constraintEnd_toStartOf="@+id/txt_in_registro"
@@ -137,11 +136,12 @@
         android:clickable="true"
         android:fontFamily="@font/alata"
         android:text="Regístrese"
-        android:textColor="@color/color1"
+        android:textColor="@color/black"
         android:textColorHint="@color/color1"
         android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/txt_in_cuenta"/>
+        app:layout_constraintStart_toEndOf="@+id/txt_in_cuenta" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
